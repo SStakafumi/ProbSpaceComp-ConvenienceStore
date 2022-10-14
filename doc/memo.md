@@ -9,6 +9,15 @@
     * drink1~4は夏人気 (清涼飲料水？)
     * drink5~6は横ばい (コーヒーとか？)
 
-![trend_per_year.jpg](../work/eda/trend_per_year.jpg)
+![trend_per_year.png](../work/eda/trend_per_year.png)
 
 ## 週の周期性
+
+週ごとに平均した値をヒートマップ化
+
+![trend_per_week.png](../work/eda/trend_per_week.png)
+
+週ごとに平均した値を標準化し、ヒートマップ化
+
+![trend_std_per_week.png](../work/eda/trend_std_per_week.png)
+
