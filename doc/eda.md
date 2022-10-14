@@ -22,4 +22,7 @@
 ![trend_std_per_week.png](../work/eda/trend_std_per_week.png)
 
 ## 日毎の周期性
+
 日ごとに平均した値を標準化し、ヒートマップ化
+
+![trend_std_per_day.png](../work/eda/trend_std_per_day.png)
