@@ -45,6 +45,7 @@ X = pd.DataFrame(index=range_of_dates)
 X["day_nr"] = range(len(X))
 X["day_of_year"] = X.index.day_of_year
 
+
 # generate the components of the target
 signal_1 = 3 + 4 * np.sin(X["day_nr"] / 365 * 2 * np.pi)
 signal_2 = 3 * np.sin(X["day_nr"] / 365 * 4 * np.pi + 365/2)
@@ -71,6 +72,10 @@ results_df.columns = ["actuals"]
 すぐに飛び込む前に、評価のフレームワークを定義する必要がある。我々のシミュレーション・データは、4年の期間からのオブザベーションを含む。我々は、生成されたデータの最初の3年間をトレーニングセットとして使用し、4年目について評価を行う。評価指標としてMean Absolute Error (MAE)を使用します。
 
 以下では、2つの集合を切り離すのに役立つ変数を定義します。
+
+```python
+TRAIN_END = 3 * 365
+```
 
 ## Approach #1: dummy variables
 まず、皆さんもある程度は知っているであろうものから始めます。時間に関係する情報を符号化する最も簡単な方法は、ダミー変数を使うことです（ワンホットエンコーディングとも呼ばれます）。例を見てみましょう。
