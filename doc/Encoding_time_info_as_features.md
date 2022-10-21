@@ -1,5 +1,7 @@
 # Three Approaches to Encoding Time Information as Features for ML Models
 
+参照: [Nvidia Technical Blog](https://developer.nvidia.com/blog/three-approaches-to-encoding-time-information-as-features-for-ml-models/)
+
 あなたが新しいデータサイエンス・プロジェクトを始めたばかりだと想像してください。目標は、ターゲット変数であるYを予測するモデルを構築することです。あなたはすでにステークホルダー/データエンジニアからいくつかのデータを受け取り、徹底的なEDAを行い、目下の問題に関連すると思われるいくつかの変数を選択しました。そして、ついに最初のモデルを構築しました。スコアは許容範囲ですが、あなたはもっと良いものができると信じています。どうすればいいのでしょうか？
 
 フォローアップの方法はたくさんあります。1つは、使用した機械学習モデルの複雑さを増すことである。あるいは、より意味のある機能を考え出すようにし、（少なくとも当面は）現在のモデルを使い続けることもできる。
