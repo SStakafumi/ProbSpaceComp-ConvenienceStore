@@ -10,5 +10,5 @@
     * prophet やってみたい
 * lgbm_by_kotrying.ipynb
     * kotryingさんのbaseline
-* baseline.ipynb
+* first_baseline.ipynb
     * lightGBMで各カラム各pごとにモデルを作成
